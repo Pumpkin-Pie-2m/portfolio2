@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.heroImg {
+  height: 350px;
+  
+  transition: all 0.4s ease-in-out;
+  border: 3px solid transparent;
+}
+
+.heroImg:hover {
+  border-color: #28a745;
+  box-shadow:
+    0 0 20px rgba(40, 167, 69, 0.6),
+    0 0 40px rgba(40, 167, 69, 0.4);
+  transform: scale(1.02);
+}
+nav {
+  border-radius: 0 0 10px 10px;
+}
+.Raleway {
+  font-family: "Raleway";
+}
+.glow-button {
+  position: relative;
+}
+.glow-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: green;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.glow-button:hover::after {
+  opacity: 1;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+
+.testimonial-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  height: 100%;
+}
+
+.card-title {
+  color: #003366;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  animation: scroll 20s linear infinite;
+}
+
+.testimonial-card {
+  flex: 0 0 300px;
+  margin: 10px;
+  padding: 15px;
+  height: 220px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-card p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height:70px;
+  background-color: #001d3d;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) rotate(360deg);
+  background-color: #003366;
+  color: white;
+}
+
+.card {
+  margin-top: 60px;
+  overflow: visible;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.floating-img {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* @keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 5px green;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 20px green,
+      0 0 30px green;
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 5px #00d4ff;
+    transform: scale(1);
+  }
+}

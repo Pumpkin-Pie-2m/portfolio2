@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicong/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" tabindex="0">
+    <nav class="navbar navbar-expand-lg bg-dark container fixed-top border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-lg-5 gap-3 my-2 fs-5 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#recent-work">Recent work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get-in-touch">Get In Touch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Main section  -->
+      <section id="home" class="bg-black min-vh-100 d-flex align-items-center">
+        <div class="container">
+          <div class="row flex-column-reverse flex-md-row mx-auto text-white justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 text-center text-md-start">
+              <h1 class="Raleway display-4 display-md-2 fw-bolder">Pumpkin.Pie</h1>
+              <p class="px-3 px-md-0">Physics & Computer Science student at Zagazig University. Merging logical precision with creative interface design.</p>
+              <button type="button" class="glow-button p-3 p-md-4 w-75 w-md-50 z-1 btn btn-success">Lets get started</button>
+            </div>
+            <div class="col-8 col-md-4 mb-4 mb-md-0">
+              <img class="heroImg img-fluid rounded-circle floating-img" src="./img/Developer.jpeg" alt="Mohammed Othman" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="py-5 bg-body-secondary" id="about">
+        <div class="container">
+          <div class="row align-items-center pt-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img src="./img/about-us.jpg" alt="About Us" class="img-fluid rounded shadow" />
+            </div>
+
+            <div class="col-md-6">
+              <h2 class="fw-bold mb-3 card-title Raleway">About Our Mission</h2>
+              <p class="text-muted lead">We bridge the gap between complex theory and practical application, ensuring every project is built with precision and efficiency.</p>
+              <p class="mb-4">Our approach focuses on clean code, scalable architecture, and user-centric design. Whether it's optimizing performance or solving intricate logic puzzles, we strive for excellence in every line of code.</p>
+              <div class="row g-3">
+                <div class="col-6">
+                  <h5 class="fw-bold Raleway">Innovation</h5>
+                  <p class="small text-secondary">Pushing boundaries with the latest tech stacks.</p>
+                </div>
+                <div class="col-6">
+                  <h5 class="fw-bold Raleway">Reliability</h5>
+                  <p class="small text-secondary">Delivering stable and secure solutions every time.</p>
+                </div>
+              </div>
+              <a href="#get-in-touch" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section id="recent-work" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center my-5 fw-bold Raleway" style="color: #001f3f">Recent Projects</h2>
+        </div>
+        <div class="container swiper">
+          <div class="slider-wrapper swiper-initialized swiper-horizontal swiper-backface-hidden" style="position: relative">
+            <div class="card-list swiper-wrapper" id="swiper-wrapper-90054ff3d1a816a0" aria-live="off">
+              <!-- Only three slides below -->
+              <div class="card border-0 swiper-slide shadow-sm swiper-slide-prev" style="width: 333px; border-radius: 15px; overflow: hidden; margin-right: 30px" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                <img src="./img/portfolio.png" class="card-img-top" alt="Portfolio Website" style="height: 250px; object-fit: cover" />
+                <div class="card-body p-4">
+                  <h3 class="fw-bold mb-1 Raleway" style="color: #005a5a; border-bottom: 3px solid #005a5a; display: inline-block">Portfolio Website</h3>
+                  <p class="text-muted small mt-3 mb-1">A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+                  <h4 class="fw-bold mb-3 Raleway">Web Development</h4>
+                  <div class="d-flex gap-4 mb-4 text-muted">
+                    <span><i class="bi bi-code-slash me-2"></i>HTML</span>
+                    <span><i class="bi bi-palette me-2"></i>CSS</span>
+                    <span><i class="bi bi-gear me-2"></i>JS</span>
+                    <span><i class="bi bi-gear me-2"></i>bootstrap</span>
+                  </div>
+                  <a href="https://dapper-fairy-e3379e.netlify.app/" class="btn px-4 py-2 fw-bold text-white rounded-pill Raleway" style="background-color: #005a5a"> View Project </a>
+                </div>
+              </div>
+              <div class="card border-0 swiper-slide shadow-sm swiper-slide-active" style="width: 333px; border-radius: 15px; overflow: hidden; margin-right: 30px" role="group" aria-label="2 / 3" data-swiper-slide-index="1">
+                <img src="./img/e-commerce.png" class="card-img-top" alt="E-Commerce Website" style="height: 250px; object-fit: cover" />
+                <div class="card-body p-4">
+                  <h3 class="fw-bold mb-1 Raleway" style="color: #005a5a; border-bottom: 3px solid #005a5a; display: inline-block">E-Commerce Platform</h3>
+                  <p class="text-muted small mt-3 mb-1">A modern e-commerce site featuring product listings, cart, and secure checkout.</p>
+                  <h4 class="fw-bold mb-3 Raleway">Web Application</h4>
+                  <div class="d-flex gap-4 mb-4 text-muted">
+                    <span><i class="bi bi-code-slash me-2"></i>HTML</span>
+                    <span><i class="bi bi-palette me-2"></i>CSS</span>
+                    <span><i class="bi bi-gear me-2"></i>JS</span>
+                    <span><i class="bi bi-cart me-2"></i>Shop</span>
+                  </div>
+                  <a href="https://pumpkin-pie-2m.github.io/e_commerce/" class="btn px-4 py-2 fw-bold text-white rounded-pill Raleway" style="background-color: #005a5a"> View Project </a>
+                </div>
+              </div>
+              <div class="card border-0 swiper-slide shadow-sm swiper-slide-next" style="width: 333px; border-radius: 15px; overflow: hidden; margin-right: 30px" role="group" aria-label="3 / 3" data-swiper-slide-index="2">
+                <img src="./img/property.png" class="card-img-top" alt="PropertyFinder" style="height: 250px; object-fit: cover" />
+                <div class="card-body p-4">
+                  <h3 class="fw-bold mb-1 Raleway" style="color: #005a5a; border-bottom: 3px solid #005a5a; display: inline-block">PropertyFinder</h3>
+                  <p class="text-muted small mt-3 mb-1">A real estate search platform for finding properties to buy or rent.</p>
+                  <h4 class="fw-bold mb-3 Raleway">Real Estate</h4>
+                  <div class="d-flex gap-4 mb-4 text-muted">
+                    <span><i class="bi bi-code-slash me-2"></i>HTML</span>
+                    <span><i class="bi bi-palette me-2"></i>CSS</span>
+                    <span><i class="bi bi-gear me-2"></i>JS</span>
+                    <span><i class="bi bi-house-door me-2"></i>Property</span>
+                  </div>
+                  <a href="https://pumpkin-pie-2m.github.io/propertyfinder/" class="btn px-4 py-2 fw-bold text-white rounded-pill Raleway" style="background-color: #005a5a"> View Project </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic" style="width: 80px">
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1" style="left: -32px"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2" style="left: -32px"></span>
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" tabindex="0" role="button" aria-label="Go to slide 3" style="left: -32px" aria-current="true"></span>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- clients -->
+
+      <!-- contact  -->
+      <section id="get-in-touch" class="py-5 bg-body-secondary overflow-hidden">
+        <div class="container" data-aos="zoom-in">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-evenly">
+              <h6 class="text-uppercase fw-bold mb-4 Raleway">Contact</h6>
+              <a href="#" class="display-5 social-icon"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="display-5 social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="display-5 social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="display-5 social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="col-md-8 bg-white p-5 rounded-4 shadow-sm">
+              <h3 class="mb-4 fw-bold text-center Raleway" style="color: #001f3f">Send us a Message</h3>
+              <form class="row g-3 needs-validation" novalidate id="contactForm" action="https://formspree.io/f/mkoqzbap" method="POST">
+                <div class="col-md-6">
+                  <label for="validationName" class="form-label Raleway">Full Name</label>
+                  <input type="text" class="form-control" id="validationName" placeholder="Enter your name" required />
+                  <div class="invalid-feedback">Please provide your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationEmail" class="form-label Raleway">Email Address</label>
+                  <input type="email" class="form-control" id="validationEmail" placeholder="email@example.com" required />
+                  <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+                <div class="col-12">
+                  <label for="validationSubject" class="form-label Raleway">Subject</label>
+                  <input type="text" class="form-control" id="validationSubject" required />
+                  <div class="invalid-feedback">Please enter a subject.</div>
+                </div>
+                <div class="col-12">
+                  <label for="validationMessage" class="form-label Raleway">Message</label>
+                  <textarea class="form-control" id="validationMessage" rows="5" required></textarea>
+                  <div class="invalid-feedback">Please write your message here.</div>
+                </div>
+                <div class="col-12 text-center">
+                  <button class="btn btn-primary btn-animate px-5 py-3 rounded-pill Raleway" type="submit" style="background-color: #001f3f; border: none"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer Raleway py-3 bg-dark text-white text-center">
+      <p class="mb-0">made with ❤</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 150,
+      });
+    </script>
+  </body>
+</html>
